@@ -13,7 +13,6 @@ const App = () => {
       <Home/>
       <About/>
       <Contact/>
-      <NotFound/> 
     </BrowserRouter>
   )
 }
