@@ -62,7 +62,7 @@ a {
     color: var(--color-gray-100);
 }
 
-img {
+.logo_slika {
     display: block;
     object-fit: cover;
     width: 100%;

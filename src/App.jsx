@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 import Home from './pages/home/Home'
 import About from './pages/about/About'
@@ -17,7 +17,8 @@ const App = () => {
         <Route path='home' element={<Home/>}/>
         <Route path='about' element={<About/>}/>
         <Route path='projects' element={<Projects/>}/>
-        <Route path='contact' element={<Contact/>}/>
+        <Route path='*' element={<NotFound/>}/>
+        <Route path='/' element={<Navigate to="/home"/>}/>
       </Routes>
     </BrowserRouter>
   )
