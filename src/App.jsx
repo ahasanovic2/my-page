@@ -5,14 +5,20 @@ import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
 import NotFound from './pages/notFound/NotFound'
 import Navbar from './components/Navbar'
+import Projects from './pages/projects/Projects'
 
 const App = () => {
+  
   return (
     <BrowserRouter>
       <Navbar/>      
-      <Home/>
-      <About/>
-      <Contact/>
+      <Routes>
+        <Route index element={<Home/>}/>
+        <Route path='home' element={<Home/>}/>
+        <Route path='about' element={<About/>}/>
+        <Route path='projects' element={<Projects/>}/>
+        <Route path='contact' element={<Contact/>}/>
+      </Routes>
     </BrowserRouter>
   )
 }
