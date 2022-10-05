@@ -2,10 +2,27 @@
     color: rgba(255,255,255,0.6);
 }
 
+#cv-btn {
+    grid-area: a;
+}
+
+#cont-btn {
+    grid-area: b;
+}
+
+#about-btn {
+    grid-area: c;
+}
+
 .cta {
+    display: grid;
     margin-top: 2.5rem;
-    display: flex;
+
     gap: 1.2rem;
+    grid-template-areas: 
+    "a a"
+    "b c";
+    place-items: center;
     justify-content: center;
 }
 .btn {
@@ -17,6 +34,7 @@
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
+    
 }
 
 .btn-primary {
@@ -29,26 +47,20 @@
     color: #1f1f38;
     border-color: transparent;
 }
-
 .main__header {
-
     width: 100%;
     place-items: center;
     margin-top: 6rem;
     align-items: center;
-}
-
-.main__header-center {
-    height: 100%;
-    width: 100%;
     display: grid;
     align-items: center;
     text-align: center;
     gap: 1rem;
 }
 
-img {
-    width: 19.5rem;
+@media screen and (max-width: 1024px) {
+    .main__header {
+        margin-top: 15rem;
+    }
 }
-
 
