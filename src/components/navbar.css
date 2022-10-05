@@ -26,11 +26,13 @@ nav {
 
 .logo {
     width: 4rem;
+    display: block;
 }
 
 .nav__links {
     display:flex;
     gap: 3.5rem;
+    align-items: center;
 }
 
 .nav__links a {

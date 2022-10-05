@@ -6,6 +6,8 @@ import Contact from './pages/contact/Contact'
 import NotFound from './pages/notFound/NotFound'
 import Navbar from './components/Navbar'
 import Projects from './pages/projects/Projects'
+import Footer from './components/Footer'
+
 
 const App = () => {
   
@@ -20,6 +22,7 @@ const App = () => {
         <Route path='*' element={<NotFound/>}/>
         <Route path='/' element={<Navigate to="/home"/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
